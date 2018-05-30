@@ -56,14 +56,13 @@ namespace Restest.Tests.Regression
           
             basicUtil = new BasicUtil();
 
-            runTimeItems = new CSPortalTesting.Models.General.RunTimeItems(RI)
-            {
-                driv = this.driv,
-                basicUtil = this.basicUtil,
-            };
+            //runTimeItems = new CSPortalTesting.Models.General.RunTimeItems(RI)
+            //{
+            //    driv = this.driv,
+            //    basicUtil = this.basicUtil,
+            //};
 
-            page_login = new Pages.Login_Page(runTimeItems);
-            page_memberregistration = new Pages.MemberRegistration_Page(runTimeItems);
+         
         }
 
         [TestMethod]
@@ -71,7 +70,7 @@ namespace Restest.Tests.Regression
         {
             if (TestRun.ThisTestAlreadyPassed() == false)
             {
-                page_login.login("csadmin", "csadmin");
+              //  page_login.login("csadmin", "csadmin");
             }
         }
     }
